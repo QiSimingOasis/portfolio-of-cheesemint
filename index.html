@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>齐思铭｜AI 产品经理个人主页</title>
+  <meta name="description" content="齐思铭的 AI 产品经理个人主页，展示工作经历、项目作品、技能兴趣与学习路径。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="nav-avatar" id="navAvatar" aria-label="齐思铭头像"></span><span>PORTFOLIO</span></a>
+    <nav class="nav-pill" id="mainNav" aria-label="主导航">
+      <a class="nav-link active" href="#home">首页</a><a class="nav-link" href="#experience">工作经历</a><a class="nav-link" href="#projects">项目作品</a><a class="nav-link" href="#skills">技能爱好</a><a class="nav-link" href="#learning">学习路径</a>
+    </nav>
+    <div class="header-actions"><button class="menu-btn" id="menuToggle" type="button" aria-expanded="false">菜单</button><a class="resume-btn" id="resumeLink" target="_blank" rel="noopener">查看简历 PDF</a></div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero-section">
+      <div class="hero-copy">
+        <div class="eyebrow" id="heroEyebrow"></div><h1 id="heroName"></h1><h2 id="heroTitle"></h2>
+        <div class="hero-intro" id="heroIntro"></div><div class="tag-cloud" id="heroTags"></div><div class="hero-meta" id="heroMeta"></div>
+      </div>
+      <div class="hero-visual"><div class="orb"></div><figure class="portrait-frame media-frame"><img id="heroPortrait" alt="齐思铭个人照片"></figure></div>
+      <a class="scroll-hint" href="#experience">继续下滑，探索更多 ↓</a>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading"><span>01 / FIELD NOTES</span><h2>我在真实业务里做过什么</h2><p>沿着时间线，记录我在内容产品、企业 AI 应用和数字营销中的实践与结果。</p></div>
+      <div class="timeline" id="experienceList"><div class="timeline-line"></div></div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading"><span>02 / SIDE IDEAS</span><h2>没有排期，也想做出来的 idea</h2><p>从真实问题出发，把观察、想法和 AI 能力变成可展示、可迭代的产品尝试。</p></div>
+      <div class="project-list" id="projectList"></div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading"><span>03 / SKILLS & LIFE</span><h2>技能爱好，多面的我</h2><p>切换卡片，查看能力说明、相关经历与生活侧面。</p></div>
+      <div class="skills-board">
+        <div class="skill-detail-panel"><div id="skillGallery"></div><h3 id="skillTitle"></h3><p id="skillDescription"></p><div class="related-list" id="relatedList"></div></div>
+        <div class="skill-matrix-wrap"><div class="matrix-tabs"><button class="matrix-tab active" data-group="skills">技能卡片</button><button class="matrix-tab" data-group="interests">兴趣卡片</button></div><div class="skill-matrix" id="skillMatrix"></div></div>
+      </div>
+    </section>
+
+    <section id="learning" class="section">
+      <div class="section-heading"><span>04 / LEARNING PATH</span><h2>学习路径</h2><p>从建筑学到 AI 产品，从工具使用者到尝试构建自己的 Skill 与产品。</p></div>
+      <div class="education-grid" id="educationList"></div>
+      <div class="ai-map-card"><div class="map-title"><span>AI EXPLORATION MAP</span><h3>从 AI 工具使用者到 AI 产品构建者</h3></div><div class="ai-map" id="learningMap"><div class="map-path"></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div><strong>下一段经历，也许可以共同前行…</strong><p id="footerContact"></p></div><button class="back-top" id="backTop">回到顶部 ↑</button></footer>
+  <script src="content.js"></script><script src="script.js"></script>
+</body>
+</html>

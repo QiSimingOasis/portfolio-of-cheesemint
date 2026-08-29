@@ -1,0 +1,16 @@
+# system / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Vercel local files
+.vercel/
+
+# future Node dependencies (if the project is upgraded later)
+node_modules/
+dist/
+.env
+.env.*
+
+# keep public examples if needed
+!.env.example
