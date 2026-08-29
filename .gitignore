@@ -7,6 +7,9 @@
 .vercel/
 .vercel-data/
 
+# Cloudflare local credentials
+.wrangler-config/
+
 # future Node dependencies (if the project is upgraded later)
 node_modules/
 dist/
