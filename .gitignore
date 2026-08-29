@@ -10,6 +10,10 @@
 # Cloudflare local credentials
 .wrangler-config/
 
+# local tooling only (keep the deployed site purely static)
+package.json
+package-lock.json
+
 # future Node dependencies (if the project is upgraded later)
 node_modules/
 dist/
