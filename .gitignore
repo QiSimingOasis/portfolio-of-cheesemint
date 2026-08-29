@@ -5,6 +5,7 @@
 
 # Vercel local files
 .vercel/
+.vercel-data/
 
 # future Node dependencies (if the project is upgraded later)
 node_modules/
@@ -14,3 +15,6 @@ dist/
 
 # keep public examples if needed
 !.env.example
+
+.vercel
+.env*
