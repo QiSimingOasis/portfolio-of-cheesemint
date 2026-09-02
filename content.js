@@ -27,7 +27,7 @@ window.SITE_DATA = {
       time: '2026.05 — 2026.09', company: '字节跳动', role: '飞书合同产品实习生（AI 应用方向）',
       summary: '围绕合同系统中的 AI 应用，参与问答、比对、协商与数据准备等产品工作。',
       traits: ['复杂问题拆解', '风险意识', '快速迭代', '跨团队协同'],
-      images: ['assets/images/experience/bytedance-01.png', 'assets/images/experience/bytedance-02.png'],
+      images: ['assets/images/experience/bytedance-01.jpg', 'assets/images/experience/bytedance-02.jpg', 'assets/images/experience/bytedance-03.jpg'],
       project: '飞书合同系统', chips: ['AI 比对', '群聊 Agent', 'Prompt'],
       details: [
         '<strong>AI 合同比对：</strong>主导 Prompt、性能与模板优化，通过法务反馈聚类、误判边界校准、异常样本归因及回归测试持续迭代；2026 年 8 月免审率达到 38%，覆盖进入合同系统合同量的 26%。',
@@ -41,7 +41,7 @@ window.SITE_DATA = {
       time: '2026.01 — 2026.03', company: '阅文集团', role: '产品策划实习生',
       summary: '参与起点剧场从 0 到 1 产品设计，覆盖用户研究、竞品分析和核心功能设计。',
       traits: ['用户视角', '内容敏感', '0—1 意识', '体验细节'],
-      images: ['assets/images/experience/yuewen-01.png', 'assets/images/experience/yuewen-02.png'],
+      images: ['assets/images/experience/yuewen-01.jpg', 'assets/images/experience/yuewen-02.png'],
       project: '起点剧场 APP', chips: ['C 端内容', '0 到 1', '功能设计'],
       details: [
         '<strong>许愿机制：</strong>设计 IP 搜索、许愿提交与热度反馈链路，经 600 名目标用户内部测试，任务完成率达到 83%。',
@@ -55,7 +55,7 @@ window.SITE_DATA = {
       time: '2025.09 — 2026.01', company: 'Wiley', role: '产品运营与营销',
       summary: '负责新媒体内容生产、线上活动策划、后台运营与数据复盘。',
       traits: ['数据敏感', '内容表达', '长线策划', '跨文化沟通'],
-      images: ['assets/images/experience/wiley-01.png', 'assets/images/experience/wiley-02.png'],
+      images: ['assets/images/experience/wiley-01.jpg', 'assets/images/experience/wiley-02.png'],
       project: '新媒体运营', chips: ['内容营销', '长线策略', '数据复盘'],
       details: ['负责 Wiley China 公众号及内部社交媒体的内容策划、编辑与数据复盘，覆盖特刊征稿、文章荐读和编辑招募等内容，并根据阅读表现优化内容结构与页面引导。'],
       metrics: [{ value: '+12.4%', label: '官网跳转率' }, { value: '+7.6%', label: '阅读完成率' }]
