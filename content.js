@@ -19,8 +19,8 @@ window.SITE_DATA = {
     experience: '字节跳动·合同 AI 产品｜阅文集团·内容产品策划｜Wiley·产品运营与营销'
   },
   contact: {
-    email: 'qisiming@bytedance.com',
-    phone: '请通过邮箱联系'
+    email: 'simingoasis@163.com',
+    phone: '18794553076'
   },
   experience: [
     {

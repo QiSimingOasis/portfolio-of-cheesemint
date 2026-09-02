@@ -32,7 +32,7 @@ function renderHome() {
   $('#heroTitle').textContent = data.site.title;
   $('#heroIntro').innerHTML = data.home.intro.map(line => `<p>${escapeHtml(line)}</p>`).join('');
   $('#heroTags').innerHTML = data.home.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join('');
-  $('#heroMeta').innerHTML = `<div><span>教育背景</span><strong>${escapeHtml(data.home.education)}</strong></div><div><span>实习经历</span><strong>${escapeHtml(data.home.experience)}</strong></div><div><span>联系我</span><strong><a href="mailto:${escapeHtml(data.contact.email)}">${escapeHtml(data.contact.email)}</a>｜手机号：${escapeHtml(data.contact.phone)}</strong></div>`;
+  $('#heroMeta').innerHTML = `<div><span>教育背景</span><strong>${escapeHtml(data.home.education)}</strong></div><div><span>实习经历</span><strong>${escapeHtml(data.home.experience)}</strong></div><div><span>联系我</span><strong>电子邮件 <a href="mailto:${escapeHtml(data.contact.email)}">${escapeHtml(data.contact.email)}</a> ｜ 手机号码 ${escapeHtml(data.contact.phone)}</strong></div>`;
   $('#heroPortrait').src = data.site.heroPortrait;
   $('#heroPortrait').closest('.media-frame').dataset.label = '个人照片待补充';
 }
