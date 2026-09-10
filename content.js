@@ -86,18 +86,18 @@ window.SITE_DATA = {
         '<strong>功能介绍：</strong>面向表达提升场景的练习与AI反馈的表达训练产品，搭建“语音录制—文本转写—大模型分析—句子级反馈—成长追踪”链路，覆盖话题闲聊、自言自语、演讲及面试 4 类练习场景。',
         '<strong>AI评测：</strong>设计逻辑结构、语义清晰度、流畅度、内容完整性、简洁度五维评价体系及 L1—L4 能力标签，通过雷达图与最近5次学习记录成长曲线呈现能力变化；支持基于岗位 JD 生成结构化面试题。'
       ],
-      images: ['assets/images/projects/expression-lab-01.png', 'assets/images/projects/expression-lab-02.png'],
+      images: ['assets/images/projects/expression-lab-01.png', 'assets/images/projects/expression-lab-02.png', 'assets/images/projects/expression-lab-03.png', 'assets/images/projects/expression-lab-04.png'],
       link: 'https://biaoda-lab.pages.dev/', linkText: '在线体验'
     },
     {
       name: '公众号选题 Agent', meta: ['Agent', '内容生产'],
       description: '把选题从“临时灵感”变成可复用工作流：主题输入、资料检索、选题评分、内容角度和大纲生成相互衔接，辅助内容创作前期决策。',
-      images: ['assets/images/projects/topic-agent-01.png', 'assets/images/projects/topic-agent-02.png']
+      images: ['assets/images/projects/topic-agent-01.jpeg', 'assets/images/projects/topic-agent-02.jpeg']
     },
     {
       name: '科普作品集', meta: ['内容作品', 'PDF'],
       description: '围绕建筑、人文和地理主题开展科普内容实践，通过趣味化叙事、结构化知识组织和视觉表达，降低专业内容的理解门槛。',
-      images: ['assets/images/projects/science-portfolio-01.png', 'assets/images/projects/science-portfolio-02.png']
+      images: ['assets/images/projects/science-portfolio-01.png', 'assets/images/projects/science-portfolio-02.png', 'assets/images/projects/science-portfolio-03.png', 'assets/images/projects/science-portfolio-04.png']
     }
   ],
   skills: {
