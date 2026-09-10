@@ -4,7 +4,7 @@ window.SITE_DATA = {
     title: 'AI 产品经理 / AI Product Manager',
     eyebrow: 'HELLO / 你好',
     resume: 'assets/files/resume.pdf',
-    avatar: '',
+    avatar: 'assets/images/icon-hero.png',
     avatarFallback: '齐',
     heroPortrait: 'assets/images/hero-portrait.png',
     hitLogo: 'assets/images/hit-logo.png'
@@ -16,7 +16,7 @@ window.SITE_DATA = {
     ],
     tags: ['用户洞察', '需求拆解', '产品落地', '数据迭代', 'Agent 工作流', 'Prompts 工程'],
     education: '哈尔滨工业大学｜建筑学本硕｜硕士 1/42 · 本科 5/79',
-    experience: '字节跳动·合同 AI 产品｜阅文集团·内容产品策划｜Wiley·产品运营与营销'
+    experience: '字节跳动 · AI产品经理 | 阅文集团 · 产品策划 | Wiley出版集团 · 产品运营'
   },
   contact: {
     email: 'simingoasis@163.com',
@@ -25,55 +25,67 @@ window.SITE_DATA = {
   experience: [
     {
       time: '2026.05 — 2026.09', company: '字节跳动', role: '飞书合同产品实习生（AI 应用方向）',
-      summary: '围绕合同系统中的 AI 应用，参与问答、比对、协商与数据准备等产品工作。',
-      traits: ['复杂问题拆解', '风险意识', '快速迭代', '跨团队协同'],
-      images: ['assets/images/experience/bytedance-01.jpg', 'assets/images/experience/bytedance-02.jpg', 'assets/images/experience/bytedance-03.jpg'],
-      project: '飞书合同系统', chips: ['AI 比对', '群聊 Agent', 'Prompt'],
+      summary: '参与合同全流程 AI 产品建设，将大模型、知识检索和 Agent 能力应用于合同审查、标准模板比对、业务咨询与群聊协商场景。',
+      traits: ['复杂问题拆解', 'AI落地', 'Prompt工程', '跨团队协同', 'B端产品'],
+      images: ['assets/images/experience/bytedance-01.jpg', 'assets/images/experience/bytedance-02.jpg'],
+      project: '飞书合同系统',
       details: [
-        '<strong>AI 合同比对：</strong>主导 Prompt、性能与模板优化，通过法务反馈聚类、误判边界校准、异常样本归因及回归测试持续迭代；2026 年 8 月免审率达到 38%，覆盖进入合同系统合同量的 26%。',
-        '<strong>补充协议 AI 比对：</strong>独立负责技术与产品方案，针对模板管理、3 类发起链路及原合同关联核验设计判断规则，推动完成开发测试并在 2 个部门灰度。',
-        '<strong>AI 问答助手：</strong>搭建业务知识与 AI 支撑文档，设计 grep 精确检索与 BM25+向量语义召回双通道；灰度后周均使用约 600 人，Oncall 单量减少 46%。',
-        '<strong>合同协商群聊 Agent：</strong>共同负责产品方案，设计合同审查、合同比对、创建合同与确认终稿 4 类意图及交互流程。'
+        '<strong>AI 合同比对：</strong>针对合同审核工作量大的问题，优化AI比对功能；主导 Prompt、性能与模板三类优化，通过法务反馈聚类、误判边界校准、异常样本归因及回归测试持续迭代；8月免审率达38%，免审率提升73%，功能覆盖合同系统合同量的 35%。',
+        '<strong>补充协议 AI 比对：</strong>将AI比对能力应用在补充协议场景。独立负责技术与产品方案，针对模板管理差异、3 类发起链路及原合同关联核验设计交易方、时间与条款影响判断规则，推动方案完成开发测试，已在2个部门灰度上线，首月免审率达17%。',
+        '<strong>AI 问答助手：</strong>针对飞书合同系统Oncall工单量大，运营回复耗时长的问题，设计AI问答助手解答问题；搭建问答知识库，设计 grep 精确检索与 BM25+向量语义召回双通道；灰度后周均使用约 600 人，Oncall 单量减少 46%。',
+        '<strong>合同协商群聊 Agent：</strong>针对群聊协商与合同系统填写的重复工作，设计群聊Agent自动填写系统；共同设计Agent产品方案，设计合同审查、合同比对、创建合同、确认终稿4类意图及交互流程，推动群聊协商与合同系统能力衔接。'
       ],
-      metrics: [{ value: '38%', label: '2026年8月免审率' }, { value: '26%', label: '合同量覆盖' }, { value: '-46%', label: 'Oncall 单量' }]
+      metrics: [{ value: '38%', label: '2026年8月免审率' }, { value: '35%', label: '合同量覆盖' }, { value: '-46%', label: 'Oncall 单量' }]
     },
     {
       time: '2026.01 — 2026.03', company: '阅文集团', role: '产品策划实习生',
-      summary: '参与起点剧场从 0 到 1 产品设计，覆盖用户研究、竞品分析和核心功能设计。',
-      traits: ['用户视角', '内容敏感', '0—1 意识', '体验细节'],
+      summary: '参与漫剧产品“起点剧场”的前期调研策划与核心体验设计，围绕用户内容偏好设计内容许愿、活跃激励和试看付费转化三个方向完善产品机制。',
+      traits: ['0-1产品全流程', '用户视角', '付费转化', 'AI漫剧', 'C端内容产品'],
       images: ['assets/images/experience/yuewen-01.jpg', 'assets/images/experience/yuewen-02.png'],
-      project: '起点剧场 APP', chips: ['C 端内容', '0 到 1', '功能设计'],
+      project: '起点剧场 APP',
       details: [
+        '<strong>产品原型设计：</strong>前期完成用户调研与竞品分析，累计产出10+个核心页面原型；产品于26年7月上线，全网累计下载约40万+次。',
         '<strong>许愿机制：</strong>设计 IP 搜索、许愿提交与热度反馈链路，经 600 名目标用户内部测试，任务完成率达到 83%。',
         '<strong>福利机制：</strong>以“剧点”串联任务奖励、活动发放、内容消费与充值场景；内部测试中规则理解率 97%、每日任务完成率 79%、每周领奖完成率 41%。',
-        '<strong>试播机制：</strong>设计 3 类试播方案，经 600 名用户内部测试，试播后继续观看率达到 80%，付费观看率较全量剧集整体水平提升 32.7%。',
-        '产品于 2026 年 7 月正式上线，全网累计下载约 40 万次；该数据用于说明产品规模，不归因为个人直接成果。'
+        '<strong>试播机制：</strong>设计 3 类试播方案，经 600 名用户内部测试，试播后继续观看率达到 80%，付费观看率较全量剧集整体水平提升 32.7%。'
       ],
-      metrics: [{ value: '40万', label: '上线后全网下载' }, { value: '83%', label: '许愿任务完成率' }, { value: '80%', label: '试播后继续观看率' }]
+      metrics: [{ value: '40万+', label: '上线后全网下载' }, { value: '83%', label: '许愿任务完成率' }, { value: '32.7%', label: '付费观看提升率' }]
     },
     {
-      time: '2025.09 — 2026.01', company: 'Wiley', role: '产品运营与营销',
-      summary: '负责新媒体内容生产、线上活动策划、后台运营与数据复盘。',
-      traits: ['数据敏感', '内容表达', '长线策划', '跨文化沟通'],
+      time: '2025.09 — 2026.01', company: 'Wiley', role: '产品运营实习生',
+      summary: '参与国际学术出版品牌的社交媒体内容运营与营销，通过内容策划、信息编辑和数据复盘，连接学术内容、作者及目标读者。',
+      traits: ['新媒体运营', '内容营销', '长线策划', '数据迭代', '资源调优'],
       images: ['assets/images/experience/wiley-01.jpg', 'assets/images/experience/wiley-02.png'],
-      project: '新媒体运营', chips: ['内容营销', '长线策略', '数据复盘'],
-      details: ['负责 Wiley China 公众号及内部社交媒体的内容策划、编辑与数据复盘，覆盖特刊征稿、文章荐读和编辑招募等内容，并根据阅读表现优化内容结构与页面引导。'],
-      metrics: [{ value: '+12.4%', label: '官网跳转率' }, { value: '+7.6%', label: '阅读完成率' }]
+      project: '新媒体运营',
+      details: [
+        '<strong>社媒内容策划：</strong>负责 Wiley China 全平台社交媒体的内容策划，覆盖特刊征稿、文章荐读和编辑招募等内容，并根据阅读表现优化内容结构与页面引导。',
+        '<strong>运营节奏规划：</strong>负责多渠道运营排期，构建内容矩阵，针对诺奖等重大节点设计长线策略，带动单月传播指数环比增长43.9%。',
+        '<strong>用户交互迭代：</strong>追踪从曝光到转化的全链路行为数据，搭建数据看板，定位高流失节点；针对内容结构与移动端场景错配问题优化内容排版策略和交互逻辑，强化关键信息、视觉层级和用户行为便利，Q4官网跳转量提升12.4%，100%阅读完成率提升7.6%。',
+        '<strong>资源调优标准化：</strong>监控分发渠道ROI，调整资源位流量分配策略；建立标准化内容组件库与SOP，内容生产效率提升21.6%。'
+      ],
+      metrics: [{ value: '+43.9%', label: '单月传播指数增长' }, { value: '+7.6%', label: '阅读完成率' }, { value: '+21.6%', label: '内容生产效率提升' }]
     },
     {
-      time: '长期实践', company: '公众号', role: '内容策划与表达实践',
+      time: '2021.09 至今', company: '公众号”白日捕梦“', role: '自媒体内容策划与表达实践',
       summary: '持续进行选题、内容组织与科普表达，并探索 AI 辅助内容生产。',
-      traits: ['长期输出', '主动探索', '信息组织', '科普表达'],
+      traits: ['内容矩阵', 'Agent提效', '长期输出', '信息组织', '科普表达'],
       images: ['assets/images/experience/wechat-01.png', 'assets/images/experience/wechat-02.png'],
-      project: '公众号“白日捕梦”', chips: ['内容表达', 'AI Agent', '科普作品'],
-      details: ['公众号经历让我持续训练信息提炼、选题判断和结构化表达能力。后续将代表性内容整理为科普作品集 PDF，并尝试用 AI Agent 辅助选题、资料整理与大纲生成。'],
-      metrics: [{ value: '长期', label: '内容实践' }, { value: '选题', label: '策划能力' }, { value: 'AI', label: '辅助创作' }]
+      project: '公众号“白日捕梦”',
+      details: [
+        '<strong>账号内容矩阵：</strong>调研市场和用户定位人文科普赛道，趣味科普+视觉化形式；搭建4大板块内容矩阵，用户留存高出平均水平17%。',
+        '<strong>AI生产工作流：</strong>针对深度内容产出效率痛点搭建了两套AI工作流，选题知识树Agent建立从热点抓取到结构化大纲的逻辑自动化；视觉化AIGC Agent建立从视觉需求拆解到标准Prompt产出自动化。实现单篇生产周期从3周压缩至2周，效率提升32%。',
+        '<strong>资源调优标准化：</strong>持续追踪用户行为，调整信息结构和投放节奏，产出多篇阅读量1W+的破圈爆款作品，验证数据驱动内容有效性。'
+      ],
+      metrics: [{ value: '+17%', label: '用户留存提升' }, { value: '+32%', label: '生产效率提升' }, { value: '3万+', label: '累计阅读量' }]
     }
   ],
   projects: [
     {
-      name: '表达研究所', meta: ['AI Coach', '产品设计'],
-      description: '面向表达提升场景的 AI 练习与反馈工具，通过语音/文字输入、AI 分析和多维度反馈，帮助用户看见自己在逻辑结构、语义清晰度、流畅度、内容完整性和简洁度上的改进空间。',
+      name: '表达研究所', meta: ['Vibe Coding', 'AI Coach', '独立产品设计'],
+      description: [
+        '<strong>功能介绍：</strong>面向表达提升场景的练习与AI反馈的表达训练产品，搭建“语音录制—文本转写—大模型分析—句子级反馈—成长追踪”链路，覆盖话题闲聊、自言自语、演讲及面试 4 类练习场景。',
+        '<strong>AI评测：</strong>设计逻辑结构、语义清晰度、流畅度、内容完整性、简洁度五维评价体系及 L1—L4 能力标签，通过雷达图与最近5次学习记录成长曲线呈现能力变化；支持基于岗位 JD 生成结构化面试题。'
+      ],
       images: ['assets/images/projects/expression-lab-01.png', 'assets/images/projects/expression-lab-02.png'],
       link: 'https://biaoda-lab.pages.dev/', linkText: '在线体验'
     },
@@ -84,7 +96,7 @@ window.SITE_DATA = {
     },
     {
       name: '科普作品集', meta: ['内容作品', 'PDF'],
-      description: '将公众号优质内容整理为结构化 PDF 作品集，展示信息组织、科普表达和长期输出能力。后续可上传封面、目录和代表文章。',
+      description: '围绕建筑、人文和地理主题开展科普内容实践，通过趣味化叙事、结构化知识组织和视觉表达，降低专业内容的理解门槛。',
       images: ['assets/images/projects/science-portfolio-01.png', 'assets/images/projects/science-portfolio-02.png']
     }
   ],
@@ -111,8 +123,8 @@ window.SITE_DATA = {
     ]
   },
   education: [
-    { level: '硕士', title: '硕士｜哈尔滨工业大学', major: '建筑设计及其理论｜保研', meta: ['专业排名：1/42', '创研硕士班班长'], tags: ['系统思维', '设计表达', '研究能力'], items: [['科研成果', '国家发明专利第一发明人、SCI一区论文学生二作'], ['荣誉成果', '两次研究生特等奖学金'], ['竞赛成果', '米兰设计周全国三等奖']] },
-    { level: '本科', title: '本科｜哈尔滨工业大学', major: '建筑学', meta: ['综合排名：5/79', '合唱团文宣部部长'], tags: ['设计思维', '视觉表达', '用户场景'], items: [['竞赛成果', '全国大学生节能减排大赛银奖'], ['荣誉成果', '校级优秀学生'], ['专业训练', '建筑设计、数字化建筑与用户场景研究']] }
+    { level: '硕士', photo: 'assets/images/icon-master.jpg', title: '硕士｜哈尔滨工业大学', major: '建筑设计及其理论｜保研', meta: ['专业排名：1/42', '创研硕士班班长、哈尔滨工业大学合唱团文宣部部长'], tags: ['系统思维', '设计表达', '研究能力'], items: [['科研成果', '国家发明专利第一发明人、SCI一区论文学生二作'], ['荣誉成果', '研究生特等奖学金（两次）、校级优秀学生'], ['竞赛成果', '米兰设计周全国三等奖、未来设计师大赛全国二等奖']] },
+    { level: '本科', photo: 'assets/images/icon-bachelor.jpeg', title: '本科｜哈尔滨工业大学', major: '建筑学', meta: ['综合排名：5/79', '哈工大seeds营造社宣传部部长、建筑学5班学习委员'], tags: ['设计思维', '视觉表达', '用户场景'], items: [['竞赛成果', '全国大学生节能减排大赛银奖、可再生能源大赛一等奖、建造节一等奖'], ['荣誉成果', '校级优秀学生、优秀毕业生、人民奖学金（5次）'], ['专业训练', '建筑设计、数字化建筑与用户场景研究']] }
   ],
   learning: [
     { year: '2023', title: '把 AI 带进创作', text: 'Midjourney 辅助建筑渲染图，文心一言辅助写作。' },

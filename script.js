@@ -42,7 +42,7 @@ function renderExperience() {
   list.insertAdjacentHTML('beforeend', data.experience.map(item => `
     <article class="timeline-item"><div class="timeline-node"></div><div class="timeline-grid">
       <div class="path-card overview-card"><div class="card-topline">${escapeHtml(item.time)}</div><h3>${escapeHtml(item.company)}</h3><p class="role">${escapeHtml(item.role)}</p><p class="role-summary">${escapeHtml(item.summary)}</p><div class="personality-tags">${item.traits.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div><div class="experience-images">${item.images.map((src, index) => mediaMarkup(src, `${item.company}经历图片${index + 1}`, '经历图片待补充')).join('')}</div></div>
-      <div class="path-card detail-card"><h4>工作项目信息｜${escapeHtml(item.project)}</h4><div class="experience-tags">${item.chips.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div><div class="detail-copy">${item.details.map(text => `<p>${text}</p>`).join('')}</div><div class="metric-strip">${item.metrics.map(metric => `<div><strong>${escapeHtml(metric.value)}</strong><span>${escapeHtml(metric.label)}</span></div>`).join('')}</div></div>
+      <div class="path-card detail-card"><h4>工作项目信息｜${escapeHtml(item.project)}</h4><div class="detail-copy">${item.details.map(text => `<p>${text}</p>`).join('')}</div><div class="metric-strip">${item.metrics.map(metric => `<div><strong>${escapeHtml(metric.value)}</strong><span>${escapeHtml(metric.label)}</span></div>`).join('')}</div></div>
     </div></article>`).join(''));
 }
 
@@ -52,7 +52,12 @@ function carouselMarkup(images, name, id) {
 }
 
 function renderProjects() {
-  $('#projectList').innerHTML = data.projects.map((project, index) => `<article class="project-card ${index === 0 ? 'project-featured' : 'project-compact'}"><div class="project-body"><div class="project-meta">${project.meta.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div><h3>${escapeHtml(project.name)}</h3><p>${escapeHtml(project.description)}</p>${project.link ? `<a class="text-btn" href="${escapeHtml(project.link)}">${escapeHtml(project.linkText)}</a>` : ''}</div><div class="project-media">${carouselMarkup(project.images, project.name, `project-${index}`)}</div></article>`).join('');
+  $('#projectList').innerHTML = data.projects.map((project, index) => {
+    const desc = Array.isArray(project.description)
+      ? `<div class="project-desc">${project.description.map(text => `<p>${text}</p>`).join('')}</div>`
+      : `<p>${escapeHtml(project.description)}</p>`;
+    return `<article class="project-card ${index === 0 ? 'project-featured' : 'project-compact'}"><div class="project-body"><div class="project-meta">${project.meta.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div><h3>${escapeHtml(project.name)}</h3>${desc}${project.link ? `<a class="text-btn" href="${escapeHtml(project.link)}" target="_blank" rel="noopener">${escapeHtml(project.linkText)}</a>` : ''}</div><div class="project-media">${carouselMarkup(project.images, project.name, `project-${index}`)}</div></article>`;
+  }).join('');
 }
 
 function initCarousel(root, imagesLength) {
@@ -91,7 +96,7 @@ function renderSkillGroup(groupName) {
 }
 
 function renderLearning() {
-  $('#educationList').innerHTML = data.education.map(item => `<article class="edu-card"><div class="edu-head"><span class="edu-badge">${escapeHtml(item.level)}</span><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.major)}</p></div><div class="school-logo media-frame"><img src="${escapeHtml(data.site.hitLogo)}" alt="哈尔滨工业大学校徽"></div></div><div class="edu-meta-line">${item.meta.map(text => `<span>${escapeHtml(text)}</span>`).join('')}</div><div class="edu-tags">${item.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div><div class="mini-card-row">${item.items.map(entry => `<div class="mini-card"><strong>${escapeHtml(entry[0])}</strong><span>${escapeHtml(entry[1])}</span></div>`).join('')}</div></article>`).join('');
+  $('#educationList').innerHTML = data.education.map(item => `<article class="edu-card"><div class="edu-head"><span class="edu-badge">${escapeHtml(item.level)}</span><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.major)}</p></div><div class="school-logo media-frame"><img src="${escapeHtml(item.photo || data.site.hitLogo)}" alt="${escapeHtml(item.level)}阶段照片"></div></div><div class="edu-meta-line">${item.meta.map(text => `<span>${escapeHtml(text)}</span>`).join('')}</div><div class="edu-tags">${item.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}</div><div class="mini-card-row">${item.items.map(entry => `<div class="mini-card"><strong>${escapeHtml(entry[0])}</strong><span>${escapeHtml(entry[1])}</span></div>`).join('')}</div></article>`).join('');
   $('#learningMap').insertAdjacentHTML('beforeend', data.learning.map((item, index) => `<div class="map-node${index === data.learning.length - 1 ? ' highlight' : ''}"><span>${escapeHtml(item.year)}</span><h4>${escapeHtml(item.title)}</h4><p>${escapeHtml(item.text)}</p></div>`).join(''));
   $('#footerContact').innerHTML = `欢迎联系：<a href="mailto:${escapeHtml(data.contact.email)}">${escapeHtml(data.contact.email)}</a> ｜ ${escapeHtml(data.contact.phone)}`;
 }
