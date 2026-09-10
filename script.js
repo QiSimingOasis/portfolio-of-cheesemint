@@ -87,6 +87,7 @@ function selectCard(index) {
 function renderSkillGroup(groupName) {
   activeGroup = groupName;
   const group = data[groupName];
+  $('#skillMatrix').dataset.group = groupName;
   $('#skillMatrix').innerHTML = group.cards.map((item, index) => `<button class="matrix-card${index === 0 ? ' active' : ''}" data-index="${index}"><span class="matrix-icon">${item.icon}</span><h4>${escapeHtml(item.name)}</h4></button>`).join('');
   $$('.matrix-card').forEach(card => card.addEventListener('click', () => selectCard(Number(card.dataset.index))));
   selectCard(0);
