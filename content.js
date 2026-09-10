@@ -3,7 +3,7 @@ window.SITE_DATA = {
     name: '齐思铭',
     title: 'AI 产品经理 / AI Product Manager',
     eyebrow: 'HELLO / 你好',
-    resume: 'assets/files/resume.pdf',
+    resume: 'assets/files/齐思铭-产品经理-哈尔滨工业大学.pdf',
     avatar: 'assets/images/icon-hero.png',
     avatarFallback: '齐',
     heroPortrait: 'assets/images/hero-portrait.png',
